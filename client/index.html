@@ -1,0 +1,20 @@
+<html>
+  <head>
+  </head>
+  <script src="js/DataConnection.js"></script>
+  <script src="js/Signaller.js"></script>
+  <script src="js/Offer.js"></script>
+  <script src="js/Answer.js"></script>
+  <script src="js/RTCDataChannel.js"></script>
+  <script src="js/TextReceiver.js"></script>
+  <script src="js/TextSender.js"></script>
+  <script src="js/FileReceiver.js"></script>
+  <script src="js/FileSender.js"></script>
+  <script type="text/javascript">
+    var connection = new DataConnection();
+    connection.initSignaller();
+    connection.onopen = function(e) {
+      console.log(e);
+    }
+  </script>
+</html>
