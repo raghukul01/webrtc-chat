@@ -43,10 +43,10 @@ var Offer = {
         peer.addStream(stream);
         peer.createOffer(function(sdp) {
           peer.setLocalDescription(sdp);
-          config.onsdp({
+          /*config.onsdp({
             sdp: sdp,
             userid: config.to
-          });
+          });*/
         }, onSdpError, offerAnswerConstraints);
 
       }, mediaError);
